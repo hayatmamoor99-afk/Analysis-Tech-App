@@ -366,12 +366,9 @@ upper = np.percentile(
 st.info(
     f"""
 95% Confidence Interval
-
 ${lower:.2f}
 to
-${upper:.2f}
-"""
-)
+${upper:.2f}""")
 
 positive = (
     final_prices > current_price
