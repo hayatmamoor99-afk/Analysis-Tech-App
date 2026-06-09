@@ -79,7 +79,7 @@ col4.metric(
     "Sector",
     info.get("sector","N/A")
 )
-    
+stock = yf.Ticker(ticker)    
 import yfinance as yf
 import pandas as pd
 
