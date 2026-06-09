@@ -9,18 +9,19 @@ st.set_page_config(
 st.title("📈 FinSight AI")
 st.subheader("AI-Powered Stock Analysis Platform")
 
-st.markdown(
-Search any stock and analyze:
+st.markdown("""
+### Features
 
-✅ "Historical Performance"
+✅ Historical Performance
 
-✅ "Investment Growth"
+✅ Investment Growth
 
-✅ "Risk Analysis"
+✅ Risk Analysis
 
-✅ "Probability Analysis"
+✅ Probability Analysis
 
-✅ "AI Insights")
+✅ AI Insights
+""")
 
 st.markdown("""
 <style>
