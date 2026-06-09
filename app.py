@@ -1,4 +1,11 @@
 import streamlit as st
+import yfinance as yf
+import pandas as pd
+import numpy as np
+
+import plotly.express as px
+import plotly.graph_objects as go
+import plotly.figure_factory as ff
 
 st.set_page_config(
     page_title="FinSight AI",
@@ -248,15 +255,17 @@ st.metric(
     f"{score}/100"
 )
 
-80-100 Strong Buy
+st.info("""
+80-100 : Strong Buy
 
-60-80 Buy
+60-80 : Buy
 
-40-60 Hold
+40-60 : Hold
 
-20-40 Weak
+20-40 : Weak
 
-0-20 Avoid
+0-20 : Avoid
+""")
 
 import numpy as np
 import plotly.graph_objects as go
@@ -266,10 +275,6 @@ returns = data["Close"].pct_change().dropna()
 mu = returns.mean()
 
 sigma = returns.std()
-
-mu = average daily return
-
-sigma = daily volatility
 
 simulation_days = 252
 simulation_count = 1000
