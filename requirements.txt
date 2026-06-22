@@ -4,5 +4,3 @@ plotly
 pandas
 numpy
 anthropic
-requests
-feedparser
